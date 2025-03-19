@@ -4,7 +4,7 @@ from random import choice as rc
 from faker import Faker
 
 from server.app import app
-from server.models import db, Message
+from server.database import db, Message
 
 fake = Faker()
 

@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_migrate import Migrate
 from flask_cors import CORS  
 from database import db
-from server.models import user, relationship, habit, habit_log, goal
+from server.database import user, relationship, habit, habit_log, goal
 from werkzeug.security import check_password_hash
 from datetime import datetime
 # Initialize Flask app
