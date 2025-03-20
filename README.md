@@ -22,7 +22,7 @@ This is a **Full-Stack Habit Tracker Application** that helps users create and t
 ## 🎯 Setup & Installation
 ### 1️⃣ **Clone the Repository**
 ```sh
-git clone https://github.com/your-repo-link.git
+git clone https://github.com/edwin463/HabitTracker-Project-Group-3
 cd HabitTracker-Project-Group-3
 
 cd backend
