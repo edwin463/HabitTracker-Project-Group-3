@@ -1,0 +1,134 @@
+/* Root Styles */
+:root {
+  --primary-color: #4f46e5; /* Vibrant Blue */
+  --secondary-color: #c5518b; /* Bright Pink */
+  --background-color: #1e1e2e; /* Dark Background */
+  --light-background: #ffffff;
+  --text-color: #e4e4e7;
+  --button-bg: #3b82f6; /* Modern Blue */
+  --button-hover: #2563eb;
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
+
+  font-family: 'Poppins', Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Body */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 0.8em 1.4em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform 0.2s ease-in-out;
+}
+button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 10px var(--button-hover);
+}
+
+/* Card Style */
+.card {
+  background: #2a2a3b;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  button {
+    padding: 0.6em 1.2em;
+  }
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1e293b;
+    background-color: var(--light-background);
+  }
+
+  a {
+    color: var(--primary-color);
+  }
+
+  a:hover {
+    color: var(--secondary-color);
+  }
+
+  button {
+    background-color: var(--button-bg);
+    color: white;
+  }
+}
