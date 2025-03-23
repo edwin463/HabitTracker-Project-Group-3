@@ -26,12 +26,12 @@ git clone https://github.com/edwin463/HabitTracker-Project-Group-3
 cd HabitTracker-Project-Group-3
 
 cd backend
-pip install -r requirements.txt
+pip install 
 python app.py
 
 cd frontend
 npm install
-npm start
+npm run dev
 
 📜 API Endpoints
 Method	Endpoint	Description
