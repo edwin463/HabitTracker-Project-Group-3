@@ -42,10 +42,10 @@ POST	/habits	Create a Habit
 DELETE	/habits/:id	Delete a Habit 
 
 👨‍💻 Contributors
-Edwin (Backend & API)
+Edwin (Setting up Flask and database & API)
 Jessica (Frontend UI)
-Trevor (Integrations)
-James (API & Frontend) 
+Trevor (Frontend & Integrations)
+James (API intergartions & Backend) 
 
 🎉 Acknowledgments
 Special thanks to Moringa School for guidance.
